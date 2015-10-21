@@ -406,7 +406,7 @@ class File
      *
      * @return    array
      */
-    public function mimes()
+    public static function mimes()
     {
         static $_mimes;
 
