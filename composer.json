@@ -2,8 +2,7 @@
 	"name": "o2system/o2file",
 	"description": "",
 	"license": "MIT",
-	"minimum-stability": "dev",
-	"version": "1.0.0",
+	"version": "1.0.0-beta",
 	"type": "php-libraries",
 	"keywords": ["utilities","php","framework","driver","libraries"],
 	"authors": [
