@@ -6,7 +6,7 @@
  *
  * This content is released under the MIT License (MIT)
  *
- * Copyright (c) 2014, PT. Lingkar Kreasi (Circle Creative).
+ * Copyright (c) 2014, .
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -28,7 +28,7 @@
  *
  * @package        O2System
  * @author         Steeven Andrian Salim
- * @copyright      Copyright (c) 2005 - 2014, PT. Lingkar Kreasi (Circle Creative).
+ * @copyright      Copyright (c) 2005 - 2014, .
  * @license        http://circle-creative.com/products/o2system/license.html
  * @license        http://opensource.org/licenses/MIT	MIT License
  * @link           http://circle-creative.com
@@ -68,7 +68,7 @@ class Zip
             return FALSE;
         }
 
-        if( file_exists( $file ) )
+        if( is_file( $file ) )
         {
             $zip = zip_open( $file );
 
@@ -86,6 +86,8 @@ class Zip
         }
     }
 
+    // ------------------------------------------------------------------------
+
     public static function write( $file, $source )
     {
         if( ! extension_loaded( 'zip' ) )
@@ -93,7 +95,7 @@ class Zip
             return FALSE;
         }
 
-        if( file_exists( $file ) )
+        if( is_file( $file ) )
         {
             unlink( $file );
         }
@@ -158,6 +160,8 @@ class Zip
         return $zip->close();
     }
 
+    // ------------------------------------------------------------------------
+
     public static function extract( $file, $destination_path )
     {
         if( ! extension_loaded( 'zip' ) )
@@ -165,7 +169,7 @@ class Zip
             return FALSE;
         }
 
-        if( file_exists( $file ) )
+        if( is_file( $file ) )
         {
             $zip = new \ZipArchive;
             $contents = $zip->open( $file );
