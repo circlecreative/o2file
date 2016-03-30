@@ -17,6 +17,8 @@ class Download
 	protected $_speed = 0;
 	protected $_partial_enabled = FALSE;
 
+	// ------------------------------------------------------------------------
+
 	public function __construct($filename = NULL)
 	{
 		if(isset($filename))
@@ -25,30 +27,42 @@ class Download
 		}
 	}
 
+	// ------------------------------------------------------------------------
+
 	public function set_file($filename)
 	{
 		$this->_filename = $filename;
 	}
+
+	// ------------------------------------------------------------------------
 
 	public function set_data($data)
 	{
 		$this->_data = $data;
 	}
 
+	// ------------------------------------------------------------------------
+
 	public function partial()
 	{
 		$this->_partial_enabled = TRUE;
 	}
+
+	// ------------------------------------------------------------------------
 
 	public function set_mime($mime)
 	{
 
 	}
 
+	// ------------------------------------------------------------------------
+
 	public function set_speed($speed)
 	{
 
 	}
+
+	// ------------------------------------------------------------------------
 
 	public function execute()
 	{
