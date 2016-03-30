@@ -35,7 +35,7 @@
 	},
 	"require": {
 		"php": ">=5.4.0",
-        "codeguy/upload": "1.*"
+        	"codeguy/upload": "*"
 	},
 	"autoload": {
 		"psr-4": {
