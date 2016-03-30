@@ -35,6 +35,7 @@
 	},
 	"require": {
 		"php": ">=5.4.0",
+		"o2system/o2glob": "*"
         	"codeguy/upload": "*"
 	},
 	"autoload": {
